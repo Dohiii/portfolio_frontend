@@ -99,6 +99,19 @@ nav {
 
 /* MAIN SECTION */
 
+.detailed_item {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.detailed_item.hidden {
+  display: none;
+}
+
 .band {
   width: 100%;
   max-width: 70%;
@@ -112,6 +125,10 @@ nav {
   grid-gap: 20px; */
 }
 
+.band.hidden {
+  display: none;
+}
+
 .band > div {
   width: 24%;
   margin: 0 20px 20px 20px;
@@ -119,6 +136,9 @@ nav {
 
 .band .featured_true {
   width: 42%;
+}
+.band .featured_true p {
+  display: none;
 }
 
 @media (min-width: 30em) {
@@ -176,10 +196,6 @@ nav {
   padding-bottom: 60%;
   background-size: cover;
   background-position: center center;
-}
-
-.featured {
-  max-width: 90rem;
 }
 
 /* @media (min-width: 60em) {
